@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Profile Styling</title>
+
+	<style type="text/css">
+		/*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+		html {
+			font-family: Roboto, Arial, sans-serif;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			height: 3rem;
+			background-color: #d81b60;
+			overflow: visible;
+			transition: all ease-in-out 0.2s;
+		}
+
+		header:hover,
+		header:hover .logo img {
+			background-color: #880e4f;
+		}
+
+		header .logo img {
+			width: 12rem;
+			padding: 1.5em 1em;
+    	background: #d81b60;
+			transition: all ease-in-out 0.2s;
+		}
+
+		nav .menu li {
+			display: inline-block;
+		}
+
+		nav .menu li a {
+			padding: 0 1rem;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		nav .menu li a:hover {
+			font-weight: 800;
+		}
+
+		main {
+			display: flex;
+		}
+
+		main .profile-image {
+			margin-top: 4rem;
+			width: 14rem;
+			height: 14rem;
+			border-radius: 50%;
+			background-color: #f2f2f2;
+			overflow: hidden;
+		}
+
+		main .profile-image img {
+			width: 82%;
+    	padding: 0 1rem;
+		}
+
+		main .content {
+			padding-left: 1rem;
+		}
+		
+		main .gallery img {
+			width: 30%;
+		}
+
+		footer {
+			position: sticky;
+			bottom: 0;
+			display: flex;
+			justify-content: space-between;
+			background-color: #2b2b2b;
+		}
+
+		footer .copyright {
+			padding: 0 1rem;
+			color: #fff;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/adeptmind-logo-white.svg" alt="adeptmind">
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="sidebar">
+			<div class="profile-image">
+				<img src="images/profile-image.png" alt="profile image">
+			</div>
+		</section>
+		<section class="content">
+			<div class="intro">
+				<h1>Developer at Adeptmind</h1>
+				<p>Carrot cake cake dessert. Sugar plum jelly sweet marzipan cookie pastry toffee biscuit croissant. Chupa chups cheesecake cotton candy. Pie tootsie roll marzipan chocolate macaroon wafer cheesecake candy canes. Candy canes jujubes gummies danish chocolate jelly beans cheesecake. Oat cake wafer chupa chups halvah.</p>
+				<p>Carrot cake cake dessert. Sugar plum jelly sweet marzipan cookie pastry toffee biscuit croissant. Chupa chups cheesecake cotton candy. Pie tootsie roll marzipan chocolate macaroon wafer cheesecake candy canes. Candy canes jujubes gummies danish chocolate jelly beans cheesecake. Oat cake wafer chupa chups halvah.</p>
+				<p>Carrot cake cake dessert. Sugar plum jelly sweet marzipan cookie pastry toffee biscuit croissant. Chupa chups cheesecake cotton candy. Pie tootsie roll marzipan chocolate macaroon wafer cheesecake candy canes. Candy canes jujubes gummies danish chocolate jelly beans cheesecake. Oat cake wafer chupa chups halvah.</p>
+			</div>
+			<div class="gallery">
+				<img src="images/image1.jpg" alt="">
+				<img src="images/image2.jpg" alt="">
+				<img src="images/image3.jpg" alt="">
+				<img src="images/image4.jpg" alt="">
+				<img src="images/image5.jpg" alt="">
+				<img src="images/image6.jpg" alt="">
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="copyright">
+			<p>&copy;2018</p>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
